@@ -9,16 +9,9 @@ void main(List<String> arguments) async {
 
   /// read build.yaml file.
   final (changes, skips) = await readYaml(yamlPath);
-
-  // log changes
-  print("Changes...");
-  for (var (from, to) in changes) {
-    // ignore: dead_code
-    if (false) {
-      print("from: $from - to: $to");
-    }
+  for (var e in skips) {
+    print("Skip: $e");
   }
-  print("..........");
 
   /// list all file
   final files =
@@ -26,8 +19,15 @@ void main(List<String> arguments) async {
 
   /// apply changes
   for (var (from, to) in changes) {
-    // replace all with that match with the key.
+    print("change from: $from to: $to");
+
+    /// replace all with that match with the key.
     for (var file in files) {
+      for (var skip in skips) {
+        /// Continue loop if it's start with the skips group.
+        if (file.path.startsWith(skip)) continue;
+      }
+      print("Finding in: ${file.path}");
       await replaceFromAndTo(file, from, to, debug: false);
     }
   }
