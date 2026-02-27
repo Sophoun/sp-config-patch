@@ -1,0 +1,15 @@
+skips:
+  - "./target-project/.git/"
+  - "./target-project/.idea/"
+  - "./target-project/build/"
+  - "./target-project/node_modules/"
+changes:
+  - replace:
+    from: "logEnable = true"
+    to: "logEnable = false"
+  - replace:
+    from: "apiUrl = 'http://uat.example.com'"
+    to: "apiUrl = 'https://api.example.com'"
+  - replace:
+    from: "com.example.app:lib-sit"
+    to: "com.example.app:lib-pro"

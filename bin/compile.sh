@@ -1,0 +1,1 @@
+dart compile exe sp_config_patch.dart -o sp-config-patch

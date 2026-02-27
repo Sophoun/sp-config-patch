@@ -1,0 +1,1 @@
+./sp-config-patch-mac ./build_prod.yaml ./target-project

@@ -1,0 +1,17 @@
+name: sp_config_patch
+description: A configuration patch tool for any text-based projects
+version: 1.0.0
+
+executables:
+  sp_config_patch: sp_config_patch.dart
+
+environment:
+  sdk: ^3.0.5
+
+dependencies:
+  path: ^1.8.0
+  yaml: ^3.1.2
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.21.0
