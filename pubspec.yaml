@@ -3,7 +3,7 @@ description: A configuration patch tool for any text-based projects
 version: 1.0.1
 
 executables:
-  sp_config_patch: sp_config_patch.dart
+  sp-config-patch: sp_config_patch.dart
 
 environment:
   sdk: ^3.0.5
