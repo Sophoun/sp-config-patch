@@ -29,6 +29,12 @@ To run or build this project, you need:
 
 1. **Install as global**:
 
+  ```bash
+  dart pub global activate sp_config_patch
+  ```
+
+  or
+
    ```bash
    dart pub global activate --source git https://github.com/Sophoun/sp-config-patch.git
    ```
