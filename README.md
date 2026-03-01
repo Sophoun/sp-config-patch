@@ -69,13 +69,13 @@ changes:
 ### Running the compiled executable
 
 ```bash
-./sp-config-patch <path_to_yaml> <target_directory>
+sp-config-patch <path_to_yaml> <target_directory>
 ```
 
 **Example:**
 
 ```bash
-./sp-config-patch ./bin/build_prod.yaml ./my-project
+sp-config-patch ./bin/build_prod.yaml ./my-project
 ```
 
 ## 📂 Project Structure
