@@ -2,10 +2,9 @@ name: sp_config_patch
 description: A configuration patch tool for any text-based projects
 version: 1.0.1
 homepage: https://github.com/Sophoun/sp-config-patch
-license: MIT
 
 executables:
-  sp-config-patch: sp_config_patch.dart
+  sp-config-patch: sp_config_patch
 
 environment:
   sdk: ^3.0.5
